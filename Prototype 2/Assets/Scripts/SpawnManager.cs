@@ -6,13 +6,18 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] spawnablePrefabs;
 
+    public float leftBound = -14;
+    public float rightBound = 14;
+    public float spawnPosZ = 20;
+
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
             int prefabIndex = Random.Range(0, spawnablePrefabs.Length);
-            Instantiate(spawnablePrefabs[prefabIndex], new Vector3(0, 0, 20), spawnablePrefabs[0].transform.rotation);
+            Vector3 spawnPosition = new Vector3(Random.Range(leftBound, rightBound), 0, spawnPosZ);
+            Instantiate(spawnablePrefabs[prefabIndex], spawnPosition, spawnablePrefabs[0].transform.rotation);
         }
     }
 }
