@@ -558,6 +558,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 12729378029082632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1194692022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194692021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fcaf746b72d43d4187c93ec1c396d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +723,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 240281194919723182, guid: fcc6f95e65a2427469b6dd42a9ce59f7,
+        type: 3}
+      propertyPath: speed
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4475883739822966591, guid: fcc6f95e65a2427469b6dd42a9ce59f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -840,6 +857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Fox_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7289838621424810324, guid: 69558c34419ba914ab8d2f6ce20c759f,
+        type: 3}
+      propertyPath: speed
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69558c34419ba914ab8d2f6ce20c759f, type: 3}
 --- !u!1001 &4805969282242144860
@@ -908,6 +930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dog_Beagle_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611965962850859964, guid: dad9edd6fbe11ad42ba027364ed23000,
+        type: 3}
+      propertyPath: speed
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dad9edd6fbe11ad42ba027364ed23000, type: 3}
