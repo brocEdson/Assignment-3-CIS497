@@ -18,11 +18,12 @@ public class SpawnManagerX : MonoBehaviour
 
     private float startDelay = 1.0f;
     private float spawnInterval = 4.0f;
-    private bool gameOver = false;
+    private HealthSystem healthSystem;
 
     // Start is called before the first frame update
     void Start()
     {
+        healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
         StartCoroutine(SpawnBallsAtRandomIntervals());
     }
 
@@ -30,7 +31,7 @@ public class SpawnManagerX : MonoBehaviour
     {
         yield return new WaitForSeconds(startDelay);
 
-        while(!gameOver)
+        while(!healthSystem.gameOver)
         {
             SpawnRandomBall();
 
