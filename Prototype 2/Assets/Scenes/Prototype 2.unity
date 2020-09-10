@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 10
+  speed: 15
 --- !u!114 &541266112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +552,9 @@ MonoBehaviour:
   - {fileID: 4490743807377421137, guid: 69558c34419ba914ab8d2f6ce20c759f, type: 3}
   - {fileID: 4475883739823286247, guid: fcc6f95e65a2427469b6dd42a9ce59f7, type: 3}
   - {fileID: 4805969282292078835, guid: dad9edd6fbe11ad42ba027364ed23000, type: 3}
+  leftBound: -14
+  rightBound: 14
+  spawnPosZ: 20
 --- !u!4 &552386735
 Transform:
   m_ObjectHideFlags: 0
