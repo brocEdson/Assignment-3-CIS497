@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* Broc Edson
+ * Challenge 2
+ * Destroys objects that go out of bounds
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

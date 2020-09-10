@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* Broc Edson
+ * Challenge 2
+ * Spawns random balls at random times in random places
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
