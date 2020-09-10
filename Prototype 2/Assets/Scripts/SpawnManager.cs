@@ -10,15 +10,16 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] spawnablePrefabs;
 
+    public HealthSystem healthSystem;
+
     public float leftBound = -14;
     public float rightBound = 14;
     public float spawnPosZ = 20;
 
-    public bool gameOver = false;
-
     // Update is called once per frame
     void Start()
     {
+        healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
     }
 
@@ -26,7 +27,7 @@ public class SpawnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
 
-        while(!gameOver)
+        while(!healthSystem.gameOver)
         {
             SpawnRandomPrefab();
 
